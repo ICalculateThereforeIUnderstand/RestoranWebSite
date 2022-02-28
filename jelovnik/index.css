@@ -1,0 +1,181 @@
+
+:root {
+    --zindex0: 1;
+    --zindex0c5: 50;
+    --zindex1: 100;
+
+    --neaktivan-boja: white;
+    --aktivan-boja: #34e5eb;
+}
+
+.background {
+    background-image: url("../slike/hr16.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+#povijest {
+    background-image: url("../slike/hr20.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+.screen {
+    background-color: rgba(0,0,0,0.5);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: var(--zindex0c5);
+}
+
+.navbar-toggler {
+    background-color: #555;
+}
+
+.navbar-custom {
+    /*background-color: rgba(0,0,0,0.4);*/
+    /*height: 140px;*/
+    
+    /*background-color: rgba(255,255,255,0.4);
+    height: 80px;*/
+    transition: all 1s;
+}
+
+
+.navbar-custom-logo1 {
+    height: 120px;   
+    display: block;
+}
+
+.navbar-custom-logo2 {
+    height: 50px; 
+    display: none; 
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: var(--neaktivan-boja);
+}
+
+.navbar-custom .nav-item .nav-link.active, .navbar-custom .nav-item:hover .nav-link {
+    color: var(--aktivan-boja);
+}
+
+.pisana {
+    font-family: 'Pacifico';
+    /*font-size: 16px;*/
+}
+
+#povijest-1 {
+    height: 300px;
+    /*background-color: yellow;*/
+}
+
+.povijest-1-p { font-size: 0.8rem; }
+
+.manja-slova { font-size: 0.9rem; }
+
+.veca-slova { font-size: 3.5rem; }
+
+#otkrijte-1 {
+    
+    background-color: yellow;
+}
+
+.kartica {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    /*height: 300px;*/
+    width: 400px;
+    background-color: white;
+    padding: 0px 0px 0px 50px;
+}
+
+
+
+.abs { 
+    position: absolute; 
+    height: 100%;
+    width: 100%;
+    /*background-color: yellow;*/
+}
+
+.fiks {
+    position: absolute;
+    bottom: 150px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    /*background-color: green;*/
+}
+
+.pozicioniran {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+/* fotogalerije */
+.prazno {
+    height: 440px;
+    width: 100%;
+    /*background-color: blue;*/
+}
+
+
+footer {
+    height: 200px;
+}
+
+.scroll-button {
+    position: fixed;
+    background-color: rgba(255,255,255,0.5);
+    height: 60px;
+    width: 60px;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 1s;
+    z-index: 5;
+}
+
+.scroll-button:hover {
+    background-color: rgba(255,255,255,1);
+    cursor: pointer;
+}
+
+.bi-chevron-up {
+    height: 50%;
+    width: 50%;
+}
+
+html {
+    scroll-behavior: smooth;
+}

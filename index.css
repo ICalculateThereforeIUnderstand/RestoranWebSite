@@ -1,0 +1,368 @@
+
+:root {
+    --zindex0: 1;
+    --zindex0c5: 50;
+    --zindex1: 100;
+
+    --neaktivan-boja: white;
+    --aktivan-boja: #34e5eb;
+}
+
+.background {
+    background-image: url("./slike/Point_1-768x432.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: var(--zindex0c5);
+}
+
+.navbar-toggler {
+    background-color: #555;
+}
+
+.navbar-custom {
+    transition: all 1s;
+}
+
+
+.navbar-custom-logo1 {
+    height: 120px;   
+    display: block;
+}
+
+.navbar-custom-logo2 {
+    height: 50px; 
+    display: none; 
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: var(--neaktivan-boja);
+}
+
+.navbar-custom .nav-item .nav-link.active, .navbar-custom .nav-item:hover .nav-link {
+    color: var(--aktivan-boja);
+}
+
+.pisana {
+    font-family: 'Pacifico';
+    /*font-size: 16px;*/
+}
+
+#povijest-1 {
+    height: 300px;
+    /*background-color: yellow;*/
+}
+
+.povijest-1-p { font-size: 0.8rem; }
+
+.manja-slova { font-size: 0.8rem; }
+
+#otkrijte-1 {
+    
+    background-color: yellow;
+}
+
+.kartica {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    /*height: 300px;*/
+    width: 400px;
+    background-color: white;
+    padding: 0px 0px 0px 50px;
+}
+
+
+
+.abs { position: absolute; }
+.pozicioniran {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+}
+
+/* fotogalerije */
+.prazno {
+    height: 25vh;
+    width: 100%;
+}
+
+#mojcarousel1, #mojcarousel2, #mojcarousel3 {
+    width: 768px;
+    height: 510px;
+}
+
+@media screen and (max-width: 600px) {
+    #mojcarousel1, #mojcarousel2, #mojcarousel3 {
+        width: 461px; 
+        height: 306px;
+    }
+}
+
+footer {
+    height: 200px;
+}
+
+#povjest-sofre {
+    position: relative;
+}
+
+.povjest-sofre-el1 {
+    width: 90vw;
+}
+
+.povjest-sofre-el2 {
+    background-color: white;
+    top: 50%; /*ovaj property je reguliran dinamicki preko javascript klase za paralaksu*/
+    left: 53vw; 
+    /*height: 40%;*/
+}
+
+@media screen and (min-width: 768px) {
+    #povjest-sofre {
+        width: 100vw;
+        position: relative;
+    }
+    .povjest-sofre-el1 {
+        /*position: absolute;
+        bottom: 5%;
+        left: 5%;*/
+        width: 60vw;
+        margin-bottom: 40px;
+    }
+    .povjest-sofre-el2 {
+        position: absolute;
+        width: 40vw;
+        /*max-width: 40vh;*/
+    }
+}
+
+.slika {
+    background-image: url("./slike/hr_13.jpg");
+    background-repeat: no-repeat;
+    /*background-size: contain;*/
+    background-size: 130%;  /*definitivno zadaj sa ovim postotkom*/
+    background-position: 0% 0%;
+    height: 50vh;
+    width: 100vw;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slika1 {
+    background-image: url("./slike/Front_sweet_1.jpg");
+    background-repeat: no-repeat;
+    /*background-size: contain;*/
+    background-size: 130%;  /*definitivno zadaj sa ovim postotkom*/
+    background-position: 0% 0%;
+    height: 50vh;
+    width: 100vw;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .slika { background-attachment: scroll;}
+    .slika1 { background-attachment: scroll;}
+}
+
+/*@media screen and (min-width: 550px) {
+    .slika { background-size: 175%; height: 35vh;}
+    .slika1 { background-size: 175%; height: 35vh;}
+}*/
+
+@media screen and (min-width: 750px) {
+    .slika { background-size: 150%; height: 35vh;}
+    .slika1 { background-size: 150%; height: 35vh;}
+}
+
+@media screen and (min-width: 900px) {
+    .slika { background-size: 140%; height: 50vh;}
+    .slika1 { background-size: 140%; height: 50vh;}
+}
+
+@media screen and (min-width: 1250px) {
+    .slika { background-size: 120%; height: 50vh;}
+    .slika1 { background-size: 120%; height: 50vh;}
+}
+
+.iz-jelovnika {
+    /*height: 30vh;*/
+    width: 100vw;
+    background-color: rgba(0,0,0,0);
+    position: relative;
+}
+
+.pomaknuti {
+    width: 100vw;
+    
+    position: absolute;
+    top: -160px;
+}
+
+@media screen and (max-width: 500px) {
+    .pomaknuti {
+        top: -200px;
+    }
+}
+
+.specijaliteti {
+    /*height: 100vh;*/
+    width: 100vw;
+    background-color: white;
+    position: relative;
+}
+
+.specijaliteti-slika {
+    width: 90vw;
+    /*padding-top: 30px;*/
+    margin-top: 30px;
+}
+
+.specijaliteti-slika1 {
+    width: 90vw;
+}
+
+.specijaliteti-slika2 {
+    width: 90vw;
+}
+
+.proziran { background-color: rgba(0,0,0,0); }
+
+.modal-slika {
+    width: 75vw;
+    position: absolute;
+    left: 12.5vw;
+}
+
+.modal-sirina {
+    width: 75vw;
+}
+
+.jelovnik {
+    width: 90vw;
+    background-color: white;
+}
+
+.slastice {
+    width: 90vw;
+    background-color: white;
+}
+
+.rezervacije {
+    width: 90vw;
+    background-color: white;
+}
+
+@media screen and (min-width: 768px) {    
+    .jelovnik {
+        position: absolute;
+        width: 600px;
+        max-width: 50vw;
+        top: 20%; /*dinamicki odredeno*/
+        left: 50vw;
+        background-color: white;
+    }
+
+    .slastice {
+        position: absolute;
+        width: 600px;
+        max-width: 50vw;
+        top: 50%; /*dinamicki odredeno*/
+        right: 50vw;
+        background-color: white;
+    }
+
+    .rezervacije {
+        position: absolute;
+        width: 600px;
+        max-width: 50vw;
+        top: 80%; /*dinamicki odredeno*/
+        left: 50vw;
+        background-color: white;
+    }
+    
+    .specijaliteti-slika1 {
+        width: 60vw;
+        margin-top: 150px;
+        margin-left: 35vw;
+    }
+    
+    .specijaliteti-slika2 {
+        width: 60vw;
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+}
+
+.jelovnik-linija {
+    /*min-height: 10px;*/
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+.jelovnik-linija-el1 {
+    z-index: 2;
+    background-color: white;
+}
+
+.jelovnik-linija-el2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.jelovnik-linija-el3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    background-color: white;
+}
+
+.scroll-button {
+    position: fixed;
+    background-color: rgba(255,255,255,0.5);
+    height: 60px;
+    width: 60px;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 1s;
+    z-index: 5;
+}
+
+.scroll-button:hover {
+    background-color: rgba(255,255,255,1);
+    cursor: pointer;
+}
+
+.bi-chevron-up {
+    height: 50%;
+    width: 50%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
