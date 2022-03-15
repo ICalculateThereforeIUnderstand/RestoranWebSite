@@ -1,4 +1,5 @@
 import { SkrolajElemente, SkrolButon} from "../skrolajElemente.js";
+import Skrol from "../skrol.js";
 
 window.onload = function() {
 	console.log("sve je u najboljem redu...");
@@ -27,4 +28,6 @@ window.onload = function() {
 		el.preventDefault();
 		el.stopPropagation();
 	});
+	
+	let scb = new Skrol(".scroll-button", "body", "ease-in-out", "1000msec");
 }
